@@ -1,0 +1,7 @@
+C:\Users\aykut\Desktop\Üni 2 Ders 1.DÖNEM\Data Structures\Project2\Project2\bin\Debug\Project2.exe.config
+C:\Users\aykut\Desktop\Üni 2 Ders 1.DÖNEM\Data Structures\Project2\Project2\bin\Debug\Project2.exe
+C:\Users\aykut\Desktop\Üni 2 Ders 1.DÖNEM\Data Structures\Project2\Project2\bin\Debug\Project2.pdb
+C:\Users\aykut\Desktop\Üni 2 Ders 1.DÖNEM\Data Structures\Project2\Project2\obj\Debug\Project2.csproj.AssemblyReference.cache
+C:\Users\aykut\Desktop\Üni 2 Ders 1.DÖNEM\Data Structures\Project2\Project2\obj\Debug\Project2.csproj.CoreCompileInputs.cache
+C:\Users\aykut\Desktop\Üni 2 Ders 1.DÖNEM\Data Structures\Project2\Project2\obj\Debug\Project2.exe
+C:\Users\aykut\Desktop\Üni 2 Ders 1.DÖNEM\Data Structures\Project2\Project2\obj\Debug\Project2.pdb
