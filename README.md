@@ -2,51 +2,59 @@
 
 ## English
 
-This repository contains a C# console application developed as part of a Data Structures course. The project demonstrates the practical use of fundamental data structures such as generic lists, stack, queue, and priority queue logic through a real dataset about fish species found in the Aegean Sea.
+This project is a C# console application that demonstrates how fundamental data structures can be used to process real data and solve queue-based problems.
 
-The application reads fish data from an external text file, parses the raw content, creates structured objects, stores them in different data structures, and displays the results through the console. In addition, the project includes a queue-based market checkout simulation that compares FIFO queue behavior with a priority-based queue approach.
+The project has two main parts. The first part reads fish species data from an external text file, converts the raw text into structured objects, and processes the data using different collection structures. The second part simulates a market checkout queue and compares how FIFO queue logic and priority-based queue logic affect the average completion time.
+
+The project was built to understand how data structures behave in practical scenarios, not only as isolated theoretical concepts. It shows how the choice of a data structure can change the order of processing, the way data is organized, and the final result of a problem.
 
 ---
 
 ## Project Overview
 
-The project has two main parts:
+### 1. Fish Species Data Processing
 
-### 1. Aegean Sea Fish Data Processing
+In this section, the application reads fish data from a text file and parses it into structured fish objects.
 
-In this part, fish information is read from a text file and converted into structured objects. Each fish object contains information such as:
+Each fish object contains information such as:
 
 * Fish name
 * Alternative name
 * Size information
-* General description
+* Description
 * Habitat / sea information
 
-The parsed fish data is stored in a generic list and then processed using different data structures.
+After the data is parsed, it is stored and processed using different data structures such as generic lists, grouped lists, stacks, and queues.
 
-### 2. Market Queue Simulation
+This part of the project focuses on transforming raw text data into usable objects and observing how different data structures process the same dataset in different orders.
 
-The second part simulates a checkout queue scenario. Customers are represented by the number of products they have. The application calculates and compares the average completion time for:
+---
 
-* FIFO Queue
+### 2. Market Checkout Queue Simulation
+
+The second part of the project simulates a market checkout scenario.
+
+Each customer is represented by the number of products they have. The application calculates the average completion time using two different queue strategies:
+
+* Standard FIFO Queue
 * Priority Queue based on product count
 
-This section demonstrates how different queue strategies can affect average waiting and completion times.
+The FIFO queue processes customers in the order they arrive. The priority-based queue gives priority to customers with fewer products. This comparison shows how queue strategy directly affects waiting time and average completion time.
 
 ---
 
 ## Features
 
-* Reads structured data from a text file
-* Parses raw text data into meaningful object fields
-* Uses a custom class to represent fish species
-* Stores data using generic lists
-* Groups fish records into list-based groups
-* Processes fish data using stack logic
-* Processes fish data using queue logic
+* Reads fish species data from an external text file
+* Parses raw text into structured object fields
+* Represents fish records using a custom class
+* Stores and processes data using generic lists
+* Groups records using list-based structures
+* Demonstrates LIFO behavior with stack
+* Demonstrates FIFO behavior with queue
 * Simulates priority queue behavior using sorted data
 * Calculates average checkout completion time
-* Compares FIFO queue and priority queue performance
+* Compares FIFO queue and priority-based queue results
 
 ---
 
@@ -72,26 +80,24 @@ This section demonstrates how different queue strategies can affect average wait
 
 ---
 
-## Learning Outcomes
+## What I Implemented and Learned
 
-This project demonstrates practical understanding of:
+Through this project, I practiced how to use core data structures in C# with real input data and simulation-based problems.
 
-* Creating and using custom classes
-* Reading and processing external data files
-* Applying generic collection structures in C#
-* Understanding LIFO behavior with stack
-* Understanding FIFO behavior with queue
-* Implementing priority-based processing logic
-* Comparing queue strategies using calculated results
-* Organizing data through object-oriented programming principles
+In the fish data processing part, I worked on reading external files, parsing unstructured text, creating objects from raw data, and organizing those objects with collection structures. This helped me understand how data preparation and object modeling are handled before applying algorithms or data structure operations.
 
----
+In the queue simulation part, I compared two different processing strategies. By calculating average completion times, I observed that the selected queue structure can directly affect the efficiency of a system.
 
-## Purpose of the Repository
+Main topics I practiced:
 
-The purpose of this repository is to show how fundamental data structures can be applied to process real-world-like data. Instead of only implementing theoretical examples, the project uses an external dataset and demonstrates how different data structures affect data processing order and result interpretation.
-
-This project is educational in scope and focuses on strengthening algorithmic thinking, object-oriented programming, and data structure usage in C#.
+* Creating custom classes
+* Reading and parsing external files
+* Using generic collections in C#
+* Understanding Stack and LIFO behavior
+* Understanding Queue and FIFO behavior
+* Simulating priority-based processing
+* Comparing algorithmic results with calculated values
+* Applying object-oriented programming principles
 
 ---
 
@@ -99,51 +105,59 @@ This project is educational in scope and focuses on strengthening algorithmic th
 
 ## Türkçe
 
-Bu repository, Veri Yapıları dersi kapsamında geliştirilmiş bir C# konsol uygulamasını içermektedir. Proje; generic list, stack, queue ve priority queue mantığı gibi temel veri yapılarının pratik kullanımını Ege Denizi’nde bulunan balık türlerine ait gerçekçi bir veri seti üzerinden göstermektedir.
+Bu proje, temel veri yapılarının gerçek veri işleme ve kuyruk tabanlı problem çözme senaryolarında nasıl kullanılabileceğini gösteren bir C# konsol uygulamasıdır.
 
-Uygulama, balık bilgilerini harici bir metin dosyasından okur, ham veriyi ayrıştırır, yapılandırılmış nesnelere dönüştürür, farklı veri yapıları üzerinde saklar ve sonuçları konsol ekranında gösterir. Buna ek olarak projede, market kasa kuyruğu üzerinden FIFO queue ve öncelikli kuyruk yaklaşımını karşılaştıran ayrı bir simülasyon da bulunmaktadır.
+Proje iki ana bölümden oluşmaktadır. İlk bölümde, harici bir metin dosyasından balık türlerine ait veriler okunur, ham metin verisi yapılandırılmış nesnelere dönüştürülür ve farklı collection yapıları üzerinde işlenir. İkinci bölümde ise bir market kasa kuyruğu simüle edilir ve FIFO queue mantığı ile öncelik tabanlı queue mantığının ortalama tamamlanma süresine etkisi karşılaştırılır.
+
+Bu proje, veri yapılarını yalnızca teorik olarak değil, pratik bir problem üzerinde kullanarak anlamak amacıyla geliştirilmiştir. Kullanılan veri yapısının işlem sırasını, verinin organize edilme şeklini ve problemin sonucunu nasıl değiştirebildiğini göstermektedir.
 
 ---
 
 ## Proje Özeti
 
-Proje iki ana bölümden oluşmaktadır:
+### 1. Balık Türleri Veri İşleme
 
-### 1. Ege Denizi Balıkları Veri İşleme
+Bu bölümde uygulama, bir metin dosyasından balık verilerini okur ve bu verileri yapılandırılmış balık nesnelerine dönüştürür.
 
-Bu bölümde balık bilgileri bir metin dosyasından okunur ve yapılandırılmış nesnelere dönüştürülür. Her balık nesnesi aşağıdaki bilgileri içerir:
+Her balık nesnesi şu bilgileri içerir:
 
 * Balık adı
 * Diğer adı
 * Boyut bilgisi
-* Genel açıklama
+* Açıklama
 * Yaşadığı deniz / ortam bilgisi
 
-Ayrıştırılan balık verileri generic list yapısında saklanır ve daha sonra farklı veri yapıları kullanılarak işlenir.
+Veriler ayrıştırıldıktan sonra generic list, liste grupları, stack ve queue gibi farklı veri yapıları kullanılarak işlenir.
 
-### 2. Market Kuyruk Simülasyonu
+Bu bölümde amaç, ham metin verisinin kullanılabilir nesnelere nasıl dönüştürüleceğini ve aynı veri setinin farklı veri yapılarıyla farklı işlem sıralarında nasıl ele alınabileceğini göstermektir.
 
-İkinci bölümde bir market kasa kuyruğu simüle edilir. Müşteriler, sahip oldukları ürün sayısı ile temsil edilir. Uygulama iki farklı kuyruk yaklaşımı için ortalama işlem tamamlanma süresini hesaplar ve karşılaştırır:
+---
 
-* FIFO Queue
+### 2. Market Kasa Kuyruğu Simülasyonu
+
+Projenin ikinci bölümünde bir market kasa kuyruğu simüle edilir.
+
+Her müşteri, sahip olduğu ürün sayısı ile temsil edilir. Uygulama iki farklı kuyruk stratejisi için ortalama tamamlanma süresini hesaplar:
+
+* Standart FIFO Queue
 * Ürün sayısına göre öncelikli kuyruk
 
-Bu bölüm, farklı kuyruk stratejilerinin bekleme ve işlem tamamlama süreleri üzerinde nasıl etki oluşturabileceğini gösterir.
+FIFO queue müşterileri geliş sırasına göre işler. Öncelik tabanlı queue ise daha az ürüne sahip müşterilere öncelik verir. Bu karşılaştırma, kuyruk stratejisinin bekleme süresi ve ortalama tamamlanma süresi üzerinde doğrudan etkili olabileceğini gösterir.
 
 ---
 
 ## Özellikler
 
-* Harici metin dosyasından veri okuma
+* Harici metin dosyasından balık türü verilerini okuma
 * Ham metin verisini anlamlı alanlara ayrıştırma
-* Balık türlerini özel bir sınıf ile temsil etme
-* Generic list kullanarak veri saklama
-* Balık kayıtlarını liste gruplarına ayırma
-* Stack mantığı ile veri işleme
-* Queue mantığı ile veri işleme
-* Sıralama tabanlı priority queue mantığı oluşturma
-* Ortalama kasa işlem tamamlama süresi hesaplama
-* FIFO queue ve priority queue performansını karşılaştırma
+* Balık kayıtlarını özel bir sınıf ile temsil etme
+* Generic list kullanarak veri saklama ve işleme
+* Liste tabanlı gruplama işlemleri yapma
+* Stack ile LIFO davranışını gösterme
+* Queue ile FIFO davranışını gösterme
+* Sıralama kullanarak priority queue mantığını simüle etme
+* Ortalama kasa işlem tamamlanma süresini hesaplama
+* FIFO queue ve priority queue sonuçlarını karşılaştırma
 
 ---
 
@@ -169,23 +183,21 @@ Bu bölüm, farklı kuyruk stratejilerinin bekleme ve işlem tamamlama süreleri
 
 ---
 
-## Kazanımlar
+## Bu Projede Ne Uyguladım ve Ne Öğrendim?
 
-Bu proje aşağıdaki konularda pratik uygulama göstermektedir:
+Bu projede, C# üzerinde temel veri yapılarını gerçek veri girişi ve simülasyon tabanlı problemlerle kullanmayı uyguladım.
 
-* Özel sınıf oluşturma ve kullanma
-* Harici veri dosyalarını okuma ve işleme
+Balık verisi işleme bölümünde harici dosyadan veri okuma, düzensiz metin verisini ayrıştırma, ham veriden nesne oluşturma ve bu nesneleri collection yapılarıyla organize etme konularında çalıştım. Bu kısım, algoritma veya veri yapısı uygulamadan önce verinin nasıl hazırlanması ve modellenmesi gerektiğini anlamamı sağladı.
+
+Kuyruk simülasyonu bölümünde ise iki farklı işlem stratejisini karşılaştırdım. Ortalama tamamlanma sürelerini hesaplayarak, seçilen kuyruk yapısının sistem verimliliğini doğrudan etkileyebileceğini gördüm.
+
+Bu projede pratik yaptığım ana konular:
+
+* Özel sınıf oluşturma
+* Harici dosyadan veri okuma ve ayrıştırma
 * C# generic collection yapılarını kullanma
-* Stack ile LIFO mantığını anlama
-* Queue ile FIFO mantığını anlama
-* Öncelik tabanlı işlem sırası oluşturma
-* Hesaplanan sonuçlar üzerinden kuyruk stratejilerini karşılaştırma
-* Nesne yönelimli programlama prensipleriyle veri organize etme
-
----
-
-## Repository Amacı
-
-Bu repository’nin amacı, temel veri yapılarının gerçekçi veri üzerinde nasıl uygulanabileceğini göstermektir. Proje yalnızca teorik örnekler yerine harici bir veri seti kullanır ve farklı veri yapılarının veri işleme sırası ile sonuç yorumlama üzerindeki etkisini gösterir.
-
-Bu proje eğitim amaçlıdır ve C# üzerinde algoritmik düşünme, nesne yönelimli programlama ve veri yapıları kullanımını güçlendirmeye odaklanmaktadır.
+* Stack ve LIFO mantığını anlama
+* Queue ve FIFO mantığını anlama
+* Öncelik tabanlı işlem sırası simüle etme
+* Hesaplanan sonuçlar üzerinden farklı yaklaşımları karşılaştırma
+* Nesne yönelimli programlama prensiplerini uygulama
